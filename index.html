@@ -31,9 +31,35 @@
             <div class="col-sm">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Left</h5>
-                        <p class="card-text">Change Color</p>
+                        <h5 class="card-title text-white">Left</h5>
+                        <p class="card-text text-white">Change Color</p>
                         <!-- TODO INSERT COLOR PICKER -->
+
+                        <div class="rgba-picker color-picker">
+                            <div class="sliders">
+                                <div class="red-slider short-slider">
+                                    <input class="bar" type="range" id="rangeinput" value="250" max="255" onchange="setRgba()" oninput="setRgba()" />
+                                </div>
+                                <div class="green-slider short-slider">
+                                    <input class="bar" type="range" id="rangeinput" value="50" max="255" onchange="setRgba()" oninput="setRgba()" />
+                                </div>
+                                <div class="blue-slider short-slider">
+                                    <input class="bar" type="range" id="rangeinput" value="50" max="255" oninput="setRgba()" onchange="setRgba()" />
+                                </div>
+                                <div class="silver-slider short-slider">
+                                    <input class="bar" type="range" id="rangeinput" value="80" max="100" oninput="setRgba()" onchange="setRgba()" />
+                                </div>
+                            </div>
+                            <div class="color-preview">
+                                <div class="color"></div>
+                            </div>
+                        </div>
+
+
+
+
+
+
                         <button id="ll-on" type="button"
                                 class="btn btn-success px-4 waves-effect waves-light col-12">
                             <i class="fa fa-lightbulb-o fa-2x" aria-hidden="true"></i>
