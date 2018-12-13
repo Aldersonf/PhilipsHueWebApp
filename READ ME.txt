@@ -1,0 +1,3 @@
+Philips Hue API
+
+USERNAME: -M-f97LmvvyfP0kYSd3b1GL-8N0ND2UWldbIKLUG
